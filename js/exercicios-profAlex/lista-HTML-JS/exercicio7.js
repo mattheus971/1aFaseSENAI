@@ -1,0 +1,6 @@
+function calcularFatoirial() {
+  
+// À fazer
+
+}
+

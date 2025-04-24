@@ -1,0 +1,6 @@
+function verificarAnoBissexto() {
+  
+// À fazer
+
+}
+
