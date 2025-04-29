@@ -1,4 +1,8 @@
-.botoes{
-    display: flex;
-    gap: 8px;
+.botoesPrincipais{
+    border: none;
+    padding: 8px;
+    color: white;
+    background-color: blue;
+    border-radius: 8px;
+    font-size: 16px;
 }
