@@ -1,5 +1,5 @@
 
-// exercicio 3
+// exercicio 3///////////////////////////////////
 function gerarNomeSuperHeroi() {
 
     let nome = prompt("Digite o seu nome: ")
@@ -23,7 +23,7 @@ function gerarNomeSuperHeroi() {
 }
 
 
-// exercicio 4
+// exercicio 4//////////////////////////////////////
 function horoscopoInterativo() {
 
     let signo = prompt("Digite o seu sígno: ")
@@ -34,29 +34,30 @@ function horoscopoInterativo() {
 
         case 1:
             alert("Hoje é um ótimo dia para buscar novos desafios " + signo)
-            brake
+            break
 
         case 2:
             alert("Hoje é um péssimo dia para buscar novos desafios " + signo)
-            brake
+            break
 
         case 3:
             alert("Hoje é um dia normal " + signo)
-            brake
+            break
     }
 }
 
-// exercicio 10
+
+// exercicio 10//////////////////////////////////
 function jogoParImpar() {
 
 
     let escolhaJogador = prompt("Escolha (Par ou Impar): ").toLowerCase();
 
     let numero = Number(prompt("Digite um número de 0 a 10: "));
-    
+
     if ((escolhaJogador === "par" || escolhaJogador === "impar") && numero >= 0 && numero <= 10) {
-      
-        let numeroAleatorio = Math.floor(Math.random() * 11); 
+
+        let numeroAleatorio = Math.floor(Math.random() * 11);
         let soma = numero + numeroAleatorio;
 
         if (soma % 2 === 0 && escolhaJogador === "par") {
@@ -73,19 +74,19 @@ function jogoParImpar() {
 }
 
 
-// exercicio 14
+// exercicio 14///////////////////////////////////
 let contador = 0
 
-function contadorCliques(){
+function contadorCliques() {
 
     contador++
 }
-function mostrarContador(){
+function mostrarContador() {
     alert(contador + " cliques")
     contador = 0
 }
 
-function jogoNumeroSecreto(){
+function jogoNumeroSecreto() {
 
     let numeroAleatorio = Math.floor(Math.random() * 100)
     let numeroDigitado = Number(prompt("Digite um número: "))
@@ -93,13 +94,106 @@ function jogoNumeroSecreto(){
     if (numeroDigitado == numeroAleatorio) {
 
         alert("Você acertou!")
-    
-    }else{
+
+    } else {
         alert("Tente novamente! O número era " + numeroAleatorio)
     }
 
 }
 
-// exercicio 18
 
+// exercicio 18////////////////////////////////////
+function gerarCaracterAleatorio() {
+    const caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz"
+
+    const numeroAleatorio = Math.floor(Math.random() * caracteres.length)
+
+    return caracteres.charAt(numeroAleatorio)
+}
+
+function mostrarSenha() {
+
+    let quantidadeCaracteres = Number(prompt("Digite a quantidade de caracteres da senha (de 6 a 16): "))
+    let senha = ""
+
+    if (quantidadeCaracteres >= 6 && quantidadeCaracteres <= 16) {
+
+        while (quantidadeCaracteres > 0) {
+
+            senha = senha + gerarCaracterAleatorio()
+            quantidadeCaracteres--
+        }
+
+        alert("Sua senha é: " + senha)
+    } else {
+        alert("A senha de ter de 6 a 16 caracteres! Tente novamente.")
+    }
+}
+
+
+//exercicio 20/////////////////////////////////////////
+function miniQuiz() {
+    
+    let perguntaUm = "O Sol é uma estrela do tipo anã branca."
+    let perguntaDois = "O Brasil é o maior país da América do Sul."
+    let perguntaTres = "A água ferve a 90°C em condições normais de pressão atmosférica."
+    let perguntaQuatro = "A invenção da lâmpada elétrica é atribuída a Thomas Edison."
+    let perguntaCinco = "Os golfinhos são mamíferos."
+
+    pontuacao = 0
+    respostaUm = prompt(perguntaUm + " V ou F?").toLowerCase()
+    if (respostaUm == "f") {
+        pontuacao++
+    }
+
+    respostaDois = prompt(perguntaDois + " V ou F?").toLowerCase()
+    if (respostaDois == "v") {
+        pontuacao++
+    }
+
+    respostaTres = prompt(perguntaTres + " V ou F?").toLowerCase()
+    if (respostaTres == "f") {
+        pontuacao++
+    }
+
+    respostaQuatro = prompt(perguntaQuatro + " V ou F?").toLowerCase()
+    if (respostaQuatro == "v") {
+        pontuacao++
+    }
+
+    respostaCinco = prompt(perguntaCinco + " V ou F?").toLowerCase()
+    if (respostaCinco == "v") {
+        pontuacao++
+    }
+
+    alert("Você acertou " + pontuacao + " perguntas.")
+}
+
+
+//exercicio 30 //////////////////////////////////////////
+function sorteDoDia(){
+    let numeroAleatorio = Math.floor(Math.random() * 5) + 1
+
+    switch (numeroAleatorio) {
+        case 1:
+            alert("1. Acredite em você, pois o maior desafio já foi vencido: começar.")
+            break;
+    
+        case 2:
+            alert("2. Cada passo, por menor que seja, te aproxima do seu sonho.")
+            break;
+
+        case 3:
+            alert("3. O sucesso começa quando você decide tentar.")
+            break;
+
+        case 4:
+            alert("4. Não tenha medo de recomeçar, a jornada é sua.")
+            break;
+
+        case 5:
+            alert("5. O impossível é só uma opinião, não uma realidade.")
+            break;
+    }
+}
 
