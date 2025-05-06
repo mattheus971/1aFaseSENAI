@@ -1,0 +1,16 @@
+button {
+    margin: 6px;
+    border: none;
+    border-radius: 16px;
+    background-color: blue;
+    color: white;
+    padding: 8px;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+
+
+
