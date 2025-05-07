@@ -131,7 +131,7 @@ function exercicioDoze() {
     while (contador <= 20) {
         if (contador % 3 == 0) {
             alert(contador + ": Fizz")
-            
+
         }
         contador++
     }
@@ -144,8 +144,101 @@ function exercicioTreze() {
     while (contador <= 20) {
         if (contador % 5 == 0) {
             alert(contador + ": Buzz")
-            
+
         }
         contador++
     }
 }
+
+// exercicio 1.1///////////////////////////////////
+function exercicioUmPontoUm() {
+
+    let numero = 1
+    let soma = 0
+
+    while (numero <= 10) {
+        soma = soma + numero
+        alert("Soma: " + soma)
+        numero++
+    }
+}
+
+// exercicio 1.2//////////////////////////////////
+function exercicioUmPontoDois() {
+
+    let numero = 5;
+    let resultado = 1;
+
+    while (numero > 0) {
+        resultado *= numero;
+        alert(resultado)
+        numero--;
+    }
+}
+
+// exercicio 1.3///////////////////////////////////
+function exercicioUmPontoTres() {
+
+    let numerosPares = 0
+    let contador = 1
+
+    while (contador <= 50) {
+        if (contador % 2 == 0) {
+            numerosPares++
+            alert(contador + " - Numeros pares: " + numerosPares)
+
+        } else {
+            alert(contador + " - Numeros pares: " + numerosPares)
+        }
+        contador++
+    }
+}
+
+// exercicio 1.4/////////////////////////////////////
+function exercicioUmPontoQuatro() {
+
+    let multiplosSeis = 0
+    let contador = 1
+
+    while (contador <= 100) {
+        if (contador % 6 == 0) {
+            multiplosSeis++
+            alert(contador + " - Multiplos de 6: " + multiplosSeis)
+
+        } else {
+            alert(contador + " - Multiplos de 6: " + multiplosSeis)
+        }
+        contador++
+    }
+}
+
+// exercicio 1.5///////////////////////////////////////
+function exercicioUmPontoCinco() {
+    let contador = 1;
+
+    while (contador <= 30) {
+        if (contador % 4 != 0) {
+            alert("Contagem: " + contador)
+        }
+        contador++
+    }
+}
+
+// exercicio 1.6//////////////////////////////////////////
+function exercicioUmPontoSeis() {
+
+    let contador = 1
+    let soma = 0
+
+    while (contador <= 100) {
+        soma = contador + soma
+        if (soma > 400) {
+            break
+        }
+        alert("Contador: " + contador + "\nSoma: " + soma)
+        contador++
+    }
+}
+
+// exercicio 1.7/////////////////////////////////////////
+
