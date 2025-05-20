@@ -176,3 +176,236 @@ function exercicioDoisPontoUm() {
         }
     }
 }
+
+function exercicioDoisPontoDois() {
+    alert("Enquanto o usuário não aceitar os termos ou tiver menos de 18 anos, continue perguntando");
+
+    let aceitouTermos = ""
+    let idade = 0
+
+    while (aceitouTermos !== "sim" && idade < 18) {
+        aceitouTermos = prompt("Você aceitou os termos? (sim/não)").toLowerCase()
+        idade = Number(prompt("Digite sua idade: "))
+    }
+    alert("Acesso permitido.")
+}
+
+function exercicioDoisPontoTres() {
+    alert("Solicite dois números até que ambos sejam pares.")
+
+    let numeroUm = 1
+    let numeroDois = 1
+
+    while (numeroUm % 2 !== 0 || numeroDois % 2 !== 0) {
+        numeroUm = Number(prompt("Digite o primeiro número:"))
+        numeroDois = Number(prompt("Digite o primeiro número:"))
+
+        if (numeroUm % 2 !== 0 || numeroDois % 2 !== 0) {
+            alert("Ambos os números devem ser pares");
+        }
+    }
+    alert("Números aceitos!");
+}
+
+function exercicioDoisPontoQuatro() {
+
+    alert("Peça uma letra até que ela não seja “a” e não seja “b”.")
+
+    let letra = ""
+
+    while (letra !== "a" && letra !== "b") {
+        letra = prompt("Digite uma letra: ")
+
+    }
+}
+
+function exercicioDoisPontoCinco() {
+
+    alert("Solicite um número até que ele esteja entre 10 e 20 ou seja igual a 50.")
+
+    let numero = 0
+
+    let numeroValido = false
+
+    while (numeroValido == false) {
+        let numero = Number(prompt("Digite um número: "))
+
+        if (numero >= 10 && numero <= 20 || numero == 50) {
+            numeroValido = true
+        }
+    }
+}
+
+function exercicioDoisPontoSeis() {
+
+    alert("Peça login e senha até que ambos estejam corretos.")
+
+    let dadosCorretos = false
+
+    while (dadosCorretos == false) {
+        let login = prompt("Digite o Login: ")
+        let senha = prompt("Digite a senha: ")
+
+        if (login == "admin123" && senha == "123") {
+            dadosCorretos = true
+        }
+    }
+}
+
+function exercicioDoisPontoSete() {
+
+    alert("Pergunte se o usuário deseja continuar (“sim” ou “não”) enquanto a resposta não for “não”.")
+
+    let resposta = ""
+
+    while (resposta !== "não") {
+
+        resposta = prompt("Você deseja continuar? ").toLowerCase()
+        if (resposta == "sim") {
+            resposta = "sim"
+        }
+    }
+}
+
+function exercicioDoisPontoOito() {
+
+    alert("Solicite dois valores. Continue pedindo até que um seja múltiplo de 3 e o outro maior que 10.")
+
+    let valorUm
+    let valorDois
+
+    let valoresValidos = false
+
+    while (valoresValidos == false) {
+        valorUm = prompt("Digite um valor: ")
+        valorDois = prompt("Digite outro valor: ")
+
+        if (valorUm % 3 == 0 && valorDois > 10 || valorUm > 10 && valorDois % 3 == 0) {
+            valoresValidos = true
+        }
+    }
+}
+
+function exercicioDoisPontoNove() {
+
+    alert("Peça login e senha até que ambos estejam corretos.")
+
+    let dadosCorretos = false
+
+    while (dadosCorretos == false) {
+        let login = prompt("Digite o Login: ")
+        let senha = prompt("Digite a senha: ")
+
+        if (login == "admin" && senha == "321") {
+            dadosCorretos = true
+        }
+    }
+}
+
+function exercicioDoisPontoDez() {
+
+    alert("Enquanto não forem preenchidos nome e idade, continue solicitando.")
+
+    let nome
+    let idade
+
+    while (!nome && !idade) {
+        nome = prompt("Digite o seu nome: ")
+        idade = prompt("Digite sua idade: ")
+    }
+}
+
+function exercicioTresPontoUm() {
+
+    alert("Imprima todos os números de 1 a 100 que são pares e múltiplos de 3.")
+
+    contador = 1
+
+    while (contador <= 100) {
+        if (contador % 2 == 0) {
+            alert("Par: " + contador)
+        } else if (contador % 3 == 0) {
+            alert("Multiplo de três: " + contador)
+        }
+        contador++
+    }
+}
+
+function exercicioTresPontoDois() {
+
+    alert("Imprima os números de 1 a 50 que são ímpares ou múltiplos de 7.")
+
+    contador = 1
+
+    while (contador <= 50) {
+        if (contador % 2 !== 0) {
+            alert("Impar: " + contador)
+        } else if (contador % 7 == 0) {
+            alert("Multiplo de sete: " + contador)
+        }
+        contador++
+    }
+}
+
+function exercicioTresPontoTres() {
+
+    alert("Mostre todos os números entre 1 e 30 que não são divisíveis por 2 e por 3.")
+
+    let contador = 1
+
+    while (contador <= 30) {
+        if (contador % 2 == 0) {
+            alert("Divisivel por dois: " + contador)
+
+        } else if (contador % 3 == 0) {
+            alert("Divisel por três: " + contador)
+
+        }
+        contador++
+    }
+}
+
+function exercicioTresPontoQuatro() {
+
+    alert("De 1 a 100, exiba apenas os que estão entre 10 e 20 ou entre 90 e 100.")
+
+    let contador = 1
+
+    while (contador <= 100) {
+        if (contador >= 10 && contador <= 20 || contador >= 90 && contador <= 100) {
+            alert(contador)
+
+        }
+        contador++
+    }
+}
+
+function exercicioTresPontoCinco() {
+
+    alert("De 0 a 20, imprima apenas os números múltiplos de 4 e não múltiplos de 8.")
+
+    let contador = 1
+
+    while (contador <= 20) {
+        if (contador % 4 == 0) {
+            alert("Multiplo de quatro: " + contador)
+
+        } else if (contador % 8 !== 0) {
+            alert("Não multiplo de oito: " + contador)
+        }
+        contador++
+    }
+}
+
+function exercicioTresPontoSeis(){
+
+    alert(". Percorra de 0 a 50 e exiba os números onde (número > 30 e número < 40) ou (número % 10 === 0)")
+
+    contador = 1
+
+}
+
+
+
+
+
