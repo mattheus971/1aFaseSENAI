@@ -397,7 +397,7 @@ function exercicioTresPontoCinco() {
     }
 }
 
-function exercicioTresPontoSeis(){
+function exercicioTresPontoSeis() {
 
     alert(". Percorra de 0 a 50 e exiba os números onde (número > 30 e número < 40) ou (número % 10 === 0)")
 
