@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container-principal" id="container-principal">
+        <div class="titulo">
+            <h1" a>Lista de compras</h1>
+                <button class="botao-cadastro" onclick="chamarCadastro()">Cadastrar item</button>
+        </div>
+        <div class="conteudo-lista">
+            <ol id="minhalista">
+              
+
+                
+            </ol>
+        </div>
+    </div>
+    <div class="container-cadastro" id="container-cadastro">
+        <div class="titulo">
+            <h1>Cadastrar itens</h1>
+            <button onclick="chamarVoltar()">Voltar</button>
+        </div>
+        <div class="conteudo-cadastro">
+            <label for="nome">Nome do item</label>
+            <input type="text" name="nome" id="nome">
+            <button onclick="adicionarItem()">Cadastrar</button>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
