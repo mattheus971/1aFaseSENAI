@@ -1,5 +1,6 @@
 
 // let nome, email, senha
+incializar()
 
 let usuario = {
     nome: '',
@@ -60,3 +61,7 @@ function limparInputs(){
     document.getElementById('inpLogSenha').value = ""
 }
 
+function incializar(){
+    mostrarLogin()
+    
+}
