@@ -16,6 +16,7 @@ nav{
 .botao-seletor{
    margin: 4px;
    height: 35px;
+   font-size: 12px;
 }
 
 #container-login{
@@ -59,10 +60,12 @@ button{
     margin: 24px;
     border-radius: 32px;
     border: solid grey 1px;
+    font-size: 16px;
     background-color: blue;
     color: white;
     width: 70%;
     height: 40px;
+    transition: 0.3s ease;
 }
 
 #container-formulario{
@@ -83,6 +86,12 @@ button{
 }
 
 button:hover{
-    scale: 1.1;
-    transition: 0.3s;
+    scale: 1.05;
+    background-color: rgb(58, 58, 255);
+}
+
+#container-produtos{
+    display: none;
+    align-items: center;
+    justify-content: center;
 }

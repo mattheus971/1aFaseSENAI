@@ -10,6 +10,7 @@
     <nav>
         <button onclick="mostrarLogin()" class="botao-seletor">Login</button>
         <button onclick="mostrarCadastro()" class="botao-seletor">Cadastro</button>
+        <button onclick="mostrarProdutos()" class="botao-seletor">Produtos</button>
     </nav>
 
     <!-- <h1>Teste Login/Cadastro</h1> -->
@@ -19,30 +20,34 @@
         <h2>Login</h2>
         <div class="container-input">
             <label for="nome">Nome</label>
-            <input type="text" placeholder="Digite seu nome">
+            <input type="text" placeholder="Digite seu nome" id="inpLogNome">
         </div>
         <div class="container-input">
             <label for="password">Senha</label>
-            <input type="password" placeholder="Digite sua senha">
+            <input type="password" placeholder="Digite sua senha" id="inpLogSenha">
         </div>
-        <button>Entrar</button>
+        <button onclick="logar()">Entrar</button>
     </section>
     
     <section id="container-cadastro">
     <h2>Cadastro</h2>
     <div class="container-input">
         <label for="nome">Nome</label>
-        <input type="text" placeholder="Digite seu nome">
-    </div>
-    <div class="container-input">
-        <label for="senha">Senha</label>
-        <input type="password" placeholder="Digite sua senha">
+        <input type="text" placeholder="Digite seu nome" id=inpCadNome>
     </div>
     <div class="container-input">
         <label for="email">Email</label>
-        <input type="email" placeholder="Digite seu email">
+        <input type="email" placeholder="Digite seu email" id=inpCadEmail>
     </div>
-    <button>Cadastrar</button>
+    <div class="container-input">
+        <label for="senha">Senha</label>
+        <input type="password" placeholder="Digite sua senha" id=inpCadSenha>
+    </div>
+    <button onclick="cadastrar()">Cadastrar</button>
+    </section>
+
+    <section id="container-produtos">
+        <h2>Produtos</h2>
     </section>
 </div>
 
