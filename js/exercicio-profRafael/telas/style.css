@@ -1,22 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-nav{
-    display: flex;
+#navbar{
+    display: none;
     flex-direction: row;
-    gap: 8px;
+    gap: 4px;
+}
+
+#navbar button{
+    padding: 8px;
+    border-radius: 32px;
+    border: solid grey 1px;
+    font-size: 12px;
+    background-color: blue;
+    color: white;
+    width: 90%;
+    height: 40px;
+    transition: 0.3s ease;
+
+}
+
+#navbar button:hover{
+  scale: 1.05;
+
 }
 
 .botao-seletor{
    margin: 4px;
    height: 35px;
    font-size: 12px;
+   cursor: pointer;
 }
 
 #container-login{
@@ -25,14 +49,15 @@ nav{
     align-items: center;
     border-radius: 16px;
     margin: 8px;
+    gap: 8px;
     flex-direction: column;
     padding: 32px;
     min-height: 100px;
     box-shadow: 0px 0px 50px rgb(143, 143, 143);
 }
 
-h2{
-    margin-top: 0;
+h1{
+    margin: 8px
 }
 
 #container-cadastro{
@@ -48,22 +73,22 @@ h2{
 }
 
 input{
-    padding: 8px;
-    width: 80%;
+    padding: 18px;
+    width: 90%;
     border-radius: 32px;
     border: solid rgb(168, 168, 168) 1px;
     height: 20px;
 }
 
-button{
+.bt-primario{
     padding: 8px;
-    margin: 24px;
+    margin: 8px;
     border-radius: 32px;
     border: solid grey 1px;
     font-size: 16px;
     background-color: blue;
     color: white;
-    width: 70%;
+    width: 90%;
     height: 40px;
     transition: 0.3s ease;
 }
@@ -81,11 +106,11 @@ button{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin: 8px;
-    width: 80%;
+    margin: 16px;
+    width: 100%;
 }
 
-button:hover{
+.bt-primario:hover{
     scale: 1.05;
     background-color: rgb(58, 58, 255);
 }
@@ -94,4 +119,30 @@ button:hover{
     display: none;
     align-items: center;
     justify-content: center;
+}
+
+.bt-secundario{
+    background-color: grey;
+    padding: 8px;
+    border-radius: 32px;
+    border: solid grey 1px;
+    font-size: 16px;
+    background-color: gray;
+    color: white;
+    width: 90%;
+    height: 40px;
+    transition: 0.3s ease;
+}
+
+.bt-secundario:hover{
+    background-color: blue;
+    
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
 }
